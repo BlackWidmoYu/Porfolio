@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Filip Dominiak – portfolio, inżynier informatyki, frontend, HTML, CSS, JavaScript, Python">
+  <title>Filip Dominiak | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="#hero" class="nav-logo">F. Dominiak</a>
+      <button class="nav-toggle" aria-label="Menu" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#o-mnie">O mnie</a></li>
+        <li><a href="#umiejetnosci">Umiejętności</a></li>
+        <li><a href="#projekty">Projekty</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <p class="hero-greeting">Cześć, jestem</p>
+        <h1 class="hero-title">Filip Dominiak</h1>
+        <p class="hero-subtitle">Inżynier informatyki (ZUT). Frontend, wsparcie IT i programowanie — HTML, CSS, JavaScript, Python</p>
+        <div class="hero-cta">
+          <a href="#projekty" class="btn btn-primary">Zobacz projekty</a>
+          <a href="#kontakt" class="btn btn-secondary">Skontaktuj się</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-window">
+          <div class="code-header">
+            <span class="code-dot"></span>
+            <span class="code-dot"></span>
+            <span class="code-dot"></span>
+            <span class="code-title">index.html</span>
+          </div>
+          <pre class="code-content"><code><span class="tag">&lt;developer&gt;</span>
+  <span class="attr">frontend</span>=<span class="value">"true"</span>
+  <span class="attr">css</span>=<span class="value">"✓"</span>
+  <span class="attr">javascript</span>=<span class="value">"✓"</span>
+<span class="tag">&lt;/developer&gt;</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="o-mnie" class="section section-about">
+      <div class="container">
+        <h2 class="section-title">O mnie</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Jestem świeżo upieczonym <strong>inżynierem informatyki</strong> z Zachodniopomorskiego Uniwersytetu Technologicznego w Szczecinie.
+              Mam za sobą praktyki w IT (konfiguracja urządzeń, stacje robocze) oraz solidne podstawy programistyczne.
+              Pracuję z <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, a także <strong>Pythonem</strong>, <strong>C++</strong> i <strong>Javą</strong>.
+            </p>
+            <p>
+              Szukam stanowiska, które pozwoli mi rozwijać się w obszarze IT — we <strong>wsparciu technicznym</strong>,
+              <strong>administracji systemami</strong> oraz <strong>programowaniu</strong>. Angielski w stopniu zaawansowanym (C1).
+            </p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <span class="highlight-icon">🎯</span>
+              <span>Frontend i estetyka</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-icon">📚</span>
+              <span>Otwartość na naukę</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-icon">🌐</span>
+              <span>Sieci i infrastruktura IT</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-icon">🤝</span>
+              <span>Praca w zespole</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="umiejetnosci" class="section section-skills">
+      <div class="container">
+        <h2 class="section-title">Umiejętności</h2>
+        <div class="skills-grid">
+          <div class="skill-card skill-required">
+            <span class="skill-badge">Wymagane</span>
+            <h3>HTML</h3>
+            <p>Semantyczna struktura, dostępność, SEO</p>
+          </div>
+          <div class="skill-card skill-required">
+            <span class="skill-badge">Wymagane</span>
+            <h3>CSS</h3>
+            <p>Layout (Flexbox, Grid), responsywność, animacje</p>
+          </div>
+          <div class="skill-card skill-required">
+            <span class="skill-badge">Wymagane</span>
+            <h3>JavaScript</h3>
+            <p>Interakcje, DOM, podstawy ES6+</p>
+          </div>
+          <div class="skill-card skill-plus">
+            <span class="skill-badge">Dodatkowo</span>
+            <h3>Python, C++, Java</h3>
+            <p>Podstawy programowania — rozwijam w kierunku wsparcia IT i aplikacji</p>
+          </div>
+          <div class="skill-card skill-plus">
+            <span class="skill-badge">IT</span>
+            <h3>Systemy i sieci</h3>
+            <p>Windows, Windows Server, konfiguracja urządzeń, podstawy administracji (hosting, FTP, SQL)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projekty" class="section section-projects">
+      <div class="container">
+        <h2 class="section-title">Projekty</h2>
+        <div class="projects-grid">
+          <a href="https://github.com/BlackWidmoYu/portfolio" target="_blank" rel="noopener noreferrer" class="project-card-link">
+            <article class="project-card">
+              <div class="project-preview">
+                <div class="project-placeholder">
+                  <span>Strona wizytówka</span>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Portfolio / Strona wizytówka</h3>
+                <p>Ta strona — autorski projekt w czystym HTML, CSS i JavaScript, responsywny i gotowy do prezentacji.</p>
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+          </a>
+          <article class="project-card project-coming">
+            <div class="project-preview">
+              <div class="project-placeholder">
+                <span>Wkrótce</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Kolejny projekt</h3>
+              <p>Tu możesz dodać opis drugiego projektu, gdy go ukończysz.</p>
+              <div class="project-tags">
+                <span>—</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section section-contact">
+      <div class="container">
+        <h2 class="section-title">Kontakt</h2>
+        <div class="contact-content">
+          <p class="contact-intro">Masz pytanie lub chcesz porozmawiać o współpracy?</p>
+          <div class="contact-links">
+            <a href="mailto:filipdominiak00@gmail.com" class="contact-link">
+              <span class="contact-icon">✉️</span>
+              filipdominiak00@gmail.com
+            </a>
+            <a href="https://github.com/BlackWidmoYu" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span class="contact-icon">GitHub</span>
+              github.com/BlackWidmoYu
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Portfolio. Zbudowane z HTML, CSS i JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
