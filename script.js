@@ -41,4 +41,28 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
   }
+
+  // Podświetlenie aktywnej sekcji w menu przy scrollu
+  var sections = document.querySelectorAll('section[id]');
+  var navLinks = document.querySelectorAll('.nav-link');
+
+  function setActiveNav() {
+    var scrollY = window.scrollY;
+    sections.forEach(function (section) {
+      var top = section.offsetTop - 100;
+      var height = section.offsetHeight;
+      var id = section.getAttribute('id');
+      if (id && scrollY >= top && scrollY < top + height) {
+        navLinks.forEach(function (link) {
+          link.classList.remove('is-active');
+          if (link.getAttribute('href') === '#' + id) {
+            link.classList.add('is-active');
+          }
+        });
+      }
+    });
+  }
+
+  window.addEventListener('scroll', setActiveNav, { passive: true });
+  setActiveNav();
 })();

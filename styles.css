@@ -236,6 +236,17 @@ ul {
   color: var(--accent);
 }
 
+.btn-cv {
+  background: transparent;
+  color: var(--text-muted);
+  border-color: var(--border);
+}
+
+.btn-cv:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
 /* Okno z kodem w hero */
 .hero-visual {
   display: flex;
@@ -309,6 +320,34 @@ ul {
 .about-text strong {
   color: var(--accent);
   font-weight: 500;
+}
+
+.about-edu {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.about-edu-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.about-edu ul {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.about-edu li {
+  margin-bottom: 0.25rem;
+}
+
+/* Aktywny link w nawigacji */
+.nav-link.is-active {
+  color: var(--accent);
 }
 
 .about-highlights {
@@ -479,6 +518,33 @@ ul {
   color: var(--accent);
   border-radius: 4px;
   font-family: var(--font-mono);
+}
+
+/* ===== Praca w toku (CV) ===== */
+.section-wip {
+  padding: 3rem 0;
+}
+
+.wip-box {
+  text-align: center;
+  padding: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.wip-text {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.wip-sub {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  opacity: 0.8;
 }
 
 /* ===== Kontakt ===== */

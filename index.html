@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Filip Dominiak – portfolio, inżynier informatyki, frontend, HTML, CSS, JavaScript, Python">
   <title>Filip Dominiak | Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%23e8a84a' width='32' height='32' rx='6'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' fill='%230f0f12' font-family='sans-serif' font-size='18' font-weight='bold'>F</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -20,10 +21,10 @@
         <span></span>
       </button>
       <ul class="nav-menu">
-        <li><a href="#o-mnie">O mnie</a></li>
-        <li><a href="#umiejetnosci">Umiejętności</a></li>
-        <li><a href="#projekty">Projekty</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#o-mnie" class="nav-link">O mnie</a></li>
+        <li><a href="#umiejetnosci" class="nav-link">Umiejętności</a></li>
+        <li><a href="#projekty" class="nav-link">Projekty</a></li>
+        <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
       </ul>
     </nav>
   </header>
@@ -37,6 +38,7 @@
         <div class="hero-cta">
           <a href="#projekty" class="btn btn-primary">Zobacz projekty</a>
           <a href="#kontakt" class="btn btn-secondary">Skontaktuj się</a>
+          <a href="#praca-w-toku" class="btn btn-cv">Pobierz CV</a>
         </div>
       </div>
       <div class="hero-visual">
@@ -70,6 +72,13 @@
               Szukam stanowiska, które pozwoli mi rozwijać się w obszarze IT — we <strong>wsparciu technicznym</strong>,
               <strong>administracji systemami</strong> oraz <strong>programowaniu</strong>. Angielski w stopniu zaawansowanym (C1).
             </p>
+            <div class="about-edu">
+              <h3 class="about-edu-title">Wykształcenie</h3>
+              <ul>
+                <li><strong>ZUT Szczecin</strong> — Inżynier informatyk (2021–2025)</li>
+                <li><strong>Zespół Szkół Elektrycznych, Gorzów Wlkp.</strong> — Technik informatyk (2017–2021)</li>
+              </ul>
+            </div>
           </div>
           <div class="about-highlights">
             <div class="highlight-card">
@@ -149,19 +158,29 @@
             </article>
           </a>
           <article class="project-card project-coming">
-            <div class="project-preview">
-              <div class="project-placeholder">
-                <span>Wkrótce</span>
+              <div class="project-preview">
+                <div class="project-placeholder">
+                  <span>Praca w toku</span>
+                </div>
               </div>
-            </div>
-            <div class="project-info">
-              <h3>Kolejny projekt</h3>
-              <p>Tu możesz dodać opis drugiego projektu, gdy go ukończysz.</p>
-              <div class="project-tags">
-                <span>—</span>
+              <div class="project-info">
+                <h3>Kolejny projekt</h3>
+                <p>Praca w toku.</p>
+                <div class="project-tags">
+                  <span>—</span>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="praca-w-toku" class="section section-wip">
+      <div class="container">
+        <div class="wip-box">
+          <h2 class="section-title">Pobierz CV</h2>
+          <p class="wip-text">Praca w toku.</p>
+          <p class="wip-sub">CV będzie dostępne wkrótce.</p>
         </div>
       </div>
     </section>
